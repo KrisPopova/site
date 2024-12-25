@@ -1,0 +1,240 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif, 'Times New Roman';
+    background-color: #D7E5FF;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-list li a:hover {
+    color: #0078d4;
+}
+
+/* Поисковая строка */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #7AA4FF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #005bb5;
+}
+
+/* Книги */
+.books {
+    display: flex; /* Включаем flexbox */
+    justify-content: space-between; /* Размещаем книги с равным расстоянием */
+    align-items: flex-start; /* Выравнивание карточек по верхнему краю */
+    padding: 20px;
+    gap: 20px; /* Расстояние между карточками */
+    overflow-x: auto; /* Горизонтальная прокрутка для маленьких экранов */
+}
+
+.book {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Устанавливаем фиксированную ширину для одинакового размера */
+    padding: 0px;
+    text-align: center;
+    flex-shrink: 0; /* Отключаем сжатие карточек */
+}
+
+.book img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.book p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Кнопка Подробнее */
+.details-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #7AA4FF;
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: light;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.details-btn:hover {
+    background-color: #005bb5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close:hover {
+    color: red;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #7AA4FF;
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: light;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #005bb5;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.actions .button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.actions .button:hover {
+    background-color: #357ab8;
+}
+

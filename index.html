@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexicon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Lexicon</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="lk.html">Личный кабинет</a></li>
+                    <li><a href="#">Книги</a></li>
+                    <li><a href="#">О библиотеке</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
+                    <li><a href="login.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Искать книги">
+        <button onclick="searchBooks()">Искать</button>
+        </div>
+
+        <section class="books">
+            <div class="book">
+                <img src="images/44492285.jpg" alt="Dune Messiah">
+                <h3>Dune Messiah</h3>
+                <p>Frank Herbert, Brian Herbert</p>
+                <a href="details.html?title=Dune+Messiah&author=Frank+Herbert&description=Описание+книги" class="details-btn">Подробнее</a>
+            </div>
+            <div class="book">
+                <img src="images/book.jpg" alt="Стефан Цвейг. Избранные новеллы">
+                <h3>Стефан Цвейг. Избранные новеллы</h3>
+                <p>Stefan Zweig, П.С. Бернштейн (Переводчик)</p>
+                <a href="details.html?title=Dune+Messiah&author=Frank+Herbert&description=Описание+книги" class="details-btn">Подробнее</a>
+            </div>
+            <div class="book">
+                <img src="images/book.jpg" alt="Волшебная Страна Оз">
+                <h3>Волшебная Страна Оз</h3>
+                <p>L. Frank Baum, Лаймен Фрэнк Баум</p>
+                <a href="details.html?title=Dune+Messiah&author=Frank+Herbert&description=Описание+книги" class="details-btn">Подробнее</a>
+            </div>
+            <div class="book">
+                <img src="images/book.jpg" alt="Раунд. Оптический роман">
+                <h3>Раунд. Оптический роман</h3>
+                <p>Анна Немзер</p>
+                <a href="details.html?title=Dune+Messiah&author=Frank+Herbert&description=Описание+книги" class="details-btn">Подробнее</a>
+            </div>
+            <div class="book">
+                <img src="images/book.jpg" alt="Дело об исчезновении">
+                <h3>Дело об исчезновении: Детективный роман</h3>
+                <p>Поэль Люси</p>
+                <a href="details.html?title=Dune+Messiah&author=Frank+Herbert&description=Описание+книги" class="details-btn">Подробнее</a>
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+
+    <div id="book-details-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="book-title">Заголовок книги</h2>
+            <p id="book-author">Автор</p>
+            <img id="book-image" src="" alt="Обложка книги">
+            <p id="book-description">Описание книги</p>
+            <button id="back-btn" class="back-button">Назад</button>
+        </div>
+    </div>
+</body>
+</html>
